@@ -11,7 +11,12 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Udhayakumar",
+  description: "Software engineer",
+};
 
 export default function Home() {
   return (

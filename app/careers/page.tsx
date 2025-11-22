@@ -22,6 +22,12 @@ import {
 } from "@/components/ui/card"
 
 import { Badge } from "@/components/ui/badge"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Udhayakumar | Careers",
+  description: "My Career Journey",
+};
 
 export default function Careers() {
     return (
@@ -32,7 +38,7 @@ export default function Careers() {
                         <NavigationMenuList className="flex-wrap justify-end w-full">
                             <NavigationMenuItem>
                                 <NavigationMenuLink asChild>
-                                    <Link href="/" className="text-foreground font-medium">Home</Link>
+                                    <Link href="/">Home</Link>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
@@ -47,7 +53,7 @@ export default function Careers() {
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <NavigationMenuLink asChild>
-                                    <Link href="/careers">Careers</Link>
+                                    <Link href="/careers" className="text-foreground font-medium">Careers</Link>
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
