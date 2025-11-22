@@ -61,7 +61,7 @@ export default function Home() {
         <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight text-balance mb-8">
           A calm and curious brain in a loud universe.
         </h1>
-        <p className="text-lg font-semibold">Udhayakuamar</p>
+        <p className="text-lg font-semibold">Udhayakumar</p>
         <p className="text-muted-foreground text-sm mb-8">Software Engineer</p>
         <div className="border-b border-white/10 mt-2 mb-8" />
         <p className="leading-7 [&:not(:first-child)]:mt-6 mb-12">
