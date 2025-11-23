@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         description: "A calm and curious brain in a loud universe.",
         images: [
             {
-                url: "http://localhost:3000/og/whoami.png",
+                url: "https://udhayakumarth.com/og/whoami.png",
                 width: 1200,
                 height: 630,
             },
