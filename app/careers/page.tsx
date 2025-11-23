@@ -20,13 +20,25 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-
 import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Udhayakumar | Careers",
-  description: "My Career Journey",
+    title: "Careers - Udhayakumar",
+    description: "My Career Journey",
+    openGraph: {
+        title: "Udhayakumar",
+        description: "A calm and curious brain in a loud universe.",
+        images: [
+            {
+                url: "http://localhost:3000/og/whoami.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+    }
 };
 
 export default function Careers() {
@@ -86,22 +98,31 @@ export default function Careers() {
                 </p>
 
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-16">
-                    Tech Journey
+                    Experience
                 </h4>
 
                 <Card className="mt-6 bg-transparent border border-border shadow-none">
                     <CardHeader>
-                        <CardTitle><span className="bg-yellow-300 px-1 text-black font-semibold">Tech Mahindra</span></CardTitle>
                         <CardTitle>Associate Software Engineer - Backend</CardTitle>
-                        <CardDescription>Dec 2023 - Present | 2 yrs</CardDescription>
+                        <p className="text-muted-foreground text-sm mt-2">
+                            Tech Mahindra
+                        </p>
+                        <Separator className="my-4" />
+                        <CardDescription>
+                            <div className="flex h-5 items-center space-x-4 text-sm">
+                                <div>Jan 2025 - Present</div>
+                                <Separator orientation="vertical" />
+                                <div>11 mos</div>
+                            </div>
+                        </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="ml-6 list-disc [&>li]:mt-2">
-                            <li>Developed and maintained SOAP and REST-based microservices using Spring Boot.</li>
-                            <li>Implemented REST APIs leveraging OpenAPI specifications for standardized documentation and seamless integration.</li>
+                            <li>Developed and maintained synchronous and asynchronous SOAP and REST microservices with multiple downstream integrations using Spring Boot.</li>
+                            <li>Build a Java-based Kubernetes client that can generate runtime code coverage for any deployment/namespace across multiple clusters.</li>
                             <li>Built a Java-based workflow runner to orchestrate REST API executions for Automated Testing.</li>
                             <li>Upgraded and migrated existing microservices from Java 11 to Java 21, ensuring performance and security improvements.</li>
-                            <li>Deployed and orchestrated microservices on Red Hat OpenShift (OCP) to achieve high scalability and reliability.</li>
+                            <li>Managed microservice deployments on Red Hat OpenShift (OCP) with blue-green rollout strategies.</li>
                         </ul>
                     </CardContent>
                     <CardFooter>
@@ -123,13 +144,44 @@ export default function Careers() {
                             <Badge variant="outline">PostgreSQL</Badge>
                         </div>
                     </CardFooter>
+                    <Separator className="my-4" />
+                    <CardHeader>
+                        <CardTitle>Cyber Security Analyst - IAM</CardTitle>
+                        <p className="text-muted-foreground text-sm mt-2">
+                            Tech Mahindra
+                        </p>
+                        <Separator className="my-4" />
+                        <CardDescription>
+                            <div className="flex h-5 items-center space-x-4 text-sm">
+                                <div>Dec 2023 - Jan 2025</div>
+                                <Separator orientation="vertical" />
+                                <div>1.1 yrs</div>
+                            </div>
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        <ul className="ml-6 list-disc [&>li]:mt-2">
+                            <li>Managed and configured SiteMinder policies, realms, rules, and responses for secure access control.</li>
+                            <li>Handled reverse proxy configurations to secure internal applications via external access points.</li>
+                            <li>Maintained single sign-on (SSO) setups and ensured seamless user authentication experiences</li>
+                        </ul>
+                    </CardContent>
                 </Card>
 
                 <Card className="mt-6 bg-transparent border border-border shadow-none">
                     <CardHeader>
-                        <CardTitle><span className="bg-yellow-300 px-1 text-black font-semibold">Virtusa</span></CardTitle>
                         <CardTitle>Full-stack Developer Intern</CardTitle>
-                        <CardDescription>May 2023 - Aug 2024 | 3 mos</CardDescription>
+                        <p className="text-muted-foreground text-sm mt-2">
+                            Virtusa
+                        </p>
+                        <Separator className="my-4" />
+                        <CardDescription>
+                            <div className="flex h-5 items-center space-x-4 text-sm">
+                                <div>May 2023 - Aug 2024</div>
+                                <Separator orientation="vertical" />
+                                <div>3 mos</div>
+                            </div>
+                        </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="ml-6 list-disc [&>li]:mt-2">
@@ -154,9 +206,18 @@ export default function Careers() {
 
                 <Card className="mt-6 bg-transparent border border-border shadow-none">
                     <CardHeader>
-                        <CardTitle><span className="bg-yellow-300 px-1 text-black font-semibold">ZF Group</span></CardTitle>
                         <CardTitle>Software Engineer Intern</CardTitle>
-                        <CardDescription>Aug 2022 - Sep 2022 | 3 mos</CardDescription>
+                        <p className="text-muted-foreground text-sm mt-2">
+                            ZF Group
+                        </p>
+                        <Separator className="my-4" />
+                        <CardDescription>
+                            <div className="flex h-5 items-center space-x-4 text-sm">
+                                <div>Aug 2022 - Sep 2022</div>
+                                <Separator orientation="vertical" />
+                                <div>2 mos</div>
+                            </div>
+                        </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="ml-6 list-disc [&>li]:mt-2">
@@ -176,26 +237,39 @@ export default function Careers() {
             </div>
 
             <footer className="w-full mt-16 py-10 border-t">
-                <div className="flex justify-center gap-6 mb-4 text-sm text-muted-foreground">
-                    <a href="/blogs" className="hover:text-foreground transition">
-                        Blogs
-                    </a>
-                    <a href="/apps" className="hover:text-foreground transition">
-                        Apps
-                    </a>
-                    <a href="/careers" className="hover:text-foreground transition">
-                        Careers
-                    </a>
-                    <a href="/contact" className="hover:text-foreground transition">
-                        Contact
-                    </a>
+                <div className=" mx-auto max-w-6xl px-4 py-8 flex justify-center gap-6 mb-4 text-sm text-muted-foreground">
+                    <div className="space-y-1">
+                        <div className="flex h-5 items-center space-x-4 text-sm">
+                            <a href="/" className="hover:text-foreground transition">
+                                Home
+                            </a>
+                            <Separator orientation="vertical" />
+                            <a href="/blogs" className="hover:text-foreground transition">
+                                Blogs
+                            </a>
+                            <Separator orientation="vertical" />
+                            <a href="/apps" className="hover:text-foreground transition">
+                                Apps
+                            </a>
+                            <Separator orientation="vertical" />
+                            <a href="/careers" className="hover:text-foreground transition">
+                                Careers
+                            </a>
+                            <Separator orientation="vertical" />
+                            <a href="/contact" className="hover:text-foreground transition">
+                                Contact
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
+                <div className="justify-center flex h-5 items-center space-x-4 text-sm mt-8">
+                    <div className="text-center text-xs text-muted-foreground">udhayakumarth.com</div>
+                    <Separator orientation="vertical" />
+                    <div className="text-center text-xs text-muted-foreground">No Rights Reserved.</div>
+                </div>
 
-
-                <p className="text-center text-xs text-muted-foreground">
-                    udhayakumarth.com | No Rights Reserved.
-                </p>
             </footer>
         </div>
     );

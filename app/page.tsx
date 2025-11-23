@@ -11,11 +11,23 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import { Separator } from "@/components/ui/separator"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Udhayakumar",
+  title: "whoami - Udhayakumar",
   description: "Software engineer",
+  openGraph: {
+    title: "Udhayakumar",
+    description: "A calm and curious brain in a loud universe.",
+    images: [
+      {
+        url: "http://localhost:3000/og/whoami.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  }
 };
 
 export default function Home() {
@@ -97,7 +109,7 @@ export default function Home() {
           I was 19. For the first time, I felt a strong push to do better. I wasn't good at anything, but I had the motivation to improve. Looking back, I think that's when my real life started. Until then, I hadn't done anything meaningful for myself.
         </p>
 
-        
+
         <p className="leading-7 [&:not(:first-child)]:mt-3">
           <span className="bg-gray-900 px-1 text-white font-semibold">Good movies, books, and computers</span> helped me rebuild who I'm now. I've grown a lot since then, but there is still a long way to go. I don't know exactly where my future will lead, but I know one thing for sure — every year from now will be better than the last.
         </p>
@@ -105,27 +117,40 @@ export default function Home() {
       </div>
 
       <footer className="w-full mt-16 py-10 border-t">
-      <div className="flex justify-center gap-6 mb-4 text-sm text-muted-foreground">
-        <a href="/blogs" className="hover:text-foreground transition">
-          Blogs
-        </a>
-        <a href="/apps" className="hover:text-foreground transition">
-          Apps
-        </a>
-        <a href="/careers" className="hover:text-foreground transition">
-          Careers
-        </a>
-        <a href="/contact" className="hover:text-foreground transition">
-          Contact
-        </a>
-      </div>
+        <div className=" mx-auto max-w-6xl px-4 py-8 flex justify-center gap-6 mb-4 text-sm text-muted-foreground">
+          <div className="space-y-1">
+            <div className="flex h-5 items-center space-x-4 text-sm">
+              <a href="/" className="hover:text-foreground transition">
+                Home
+              </a>
+              <Separator orientation="vertical" />
+              <a href="/blogs" className="hover:text-foreground transition">
+                Blogs
+              </a>
+              <Separator orientation="vertical" />
+              <a href="/apps" className="hover:text-foreground transition">
+                Apps
+              </a>
+              <Separator orientation="vertical" />
+              <a href="/careers" className="hover:text-foreground transition">
+                Careers
+              </a>
+              <Separator orientation="vertical" />
+              <a href="/contact" className="hover:text-foreground transition">
+                Contact
+              </a>
+            </div>
+          </div>
 
-      
+        </div>
 
-      <p className="text-center text-xs text-muted-foreground">
-        udhayakumarth.com | No Rights Reserved.
-      </p>
-    </footer>
+        <div className="justify-center flex h-5 items-center space-x-4 text-sm mt-8">
+          <div className="text-center text-xs text-muted-foreground">udhayakumarth.com</div>
+          <Separator orientation="vertical" />
+          <div className="text-center text-xs text-muted-foreground">No Rights Reserved.</div>
+        </div>
+
+      </footer>
     </div>
   );
 }
