@@ -12,9 +12,17 @@ let urls = staticRoutes.map(
 );
 
 urls = urls.concat(
-  posts.map((post: { slug: string; date: string }) =>
-    `<url><loc>${baseUrl}/blogs/${post.slug}</loc><lastmod>${post.date}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`
-  )
+  posts.map((post: { slug: string; date: string }) => {
+    // Ensure date is in ISO 8601 format (YYYY-MM-DD)
+    let isoDate = post.date;
+    if (isoDate && !/^\d{4}-\d{2}-\d{2}/.test(isoDate)) {
+      const d = new Date(isoDate);
+      if (!isNaN(d.getTime())) {
+        isoDate = d.toISOString().split('T')[0];
+      }
+    }
+    return `<url><loc>${baseUrl}/blogs/${post.slug}</loc><lastmod>${isoDate}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`;
+  })
 );
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>`;
