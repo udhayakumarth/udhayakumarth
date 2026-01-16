@@ -1,0 +1,73 @@
+---
+title: Spring Boot 4.0 Migration Overview
+slug: spring-boot-4-migration
+date: 2025-01-15
+author: Udhayakumar
+---
+
+### New baselines
+The Spring Boot 4.x migration introduces new baselines for Java, Jakarta, Spring Framework, testing, serialization, and major third-party libraries.
+
+- Java 17 minimum (Java 25 recommended)
+- Jakarta EE 11
+- Spring Framework 7
+- Jackson 3.x
+- JUnit 6
+- Hibernate 7
+- Kafka 4.1
+- Elasticsearch 9
+
+Sample code
+```java
+@RestController
+public class AccountController {
+
+	@GetMapping(path = "/account/{id}", version = "1.1") 
+	public Account getAccount() {
+	}
+}
+```
+### Modularizing Spring Boot
+
+https://spring.io/blog/2025/10/28/modularizing-spring-boot
+
+When Spring Boot 1.0 was released in 2014, it shipped with a single spring-boot-autoconfigure jar weighing in at 182 KiB. The autoconfigure jar grows. With `Spring Boot 3.5`, that single spring-boot-autoconfigure jar is now 2 MiB!.   
+Instead of a single, monolithic spring-boot-autoconfigure jar, we are now splitting functionality into small and more focused modules. Every technology supported by Spring Boot now has its own starter, some of which are new in Spring Boot 4.
+
+### Adjust Manual or Custom Configuration
+
+If your project or any custom starter previously depended on spring-boot-autoconfigure or pulled in auto-configuration classes manually, you will need to replace those imports/dependencies with the new modular equivalents. You'll also need to update package names if you reference Spring Boot's packages. Because modules now begin with org.springframework.boot.<module>
+
+### Module Dependencies Starters List
+
+https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#starters
+
+###  Deprecated Starters
+
+https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#deprecated-starters
+
+| Deprecated Starter | Replacement |
+| --- | --- |
+| spring-boot-starter-oauth2-authorization-server | spring-boot-starter-security-oauth2-authorization-server |
+| spring-boot-starter-oauth2-client | spring-boot-starter-security-oauth2-client |
+| spring-boot-starter-oauth2-resource-server | spring-boot-starter-security-oauth2-resource-server |
+| spring-boot-starter-web | spring-boot-starter-webmvc |
+| spring-boot-starter-web-services | spring-boot-starter-webservices |
+
+### Spring Boot 3.x Deprecated API's
+
+Spring Boot 4.x removes a large portion of APIs deprecated across the 2.x and 3.x lines. In total, 36 deprecated classes—roughly 88% of all deprecations—have been removed. 
+
+
+Deprecated API's in spring boot 3.5: https://docs.spring.io/spring-boot/3.5/api/java/deprecated-list.html
+Deprecated API's in spring boot 2.7.18: https://docs.spring.io/spring-boot/docs/2.7.18/api/deprecated-list.html
+
+
+### Upgrading Jackson
+
+Upgrading Jackson: https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Migration-Guide#upgrading-jackson  
+Major changes/features in 3.0: https://github.com/FasterXML/jackson/wiki/Jackson-Release-3.0#major-changesfeatures-in-30
+
+### Articles:
+1. https://medium.com/@iamthatsoftwareguy/spring-boot-3-x-deprecations-whats-out-why-and-what-s-next-bb067c409060  
+2. https://www.moderne.ai/blog/spring-boot-4x-migration-guide

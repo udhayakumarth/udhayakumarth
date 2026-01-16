@@ -23,6 +23,8 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 import type { Metadata } from "next";
+import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
     title: "Contact - Udhayakumar",
@@ -40,44 +42,10 @@ export const metadata: Metadata = {
     }
 };
 
-export default function Careers() {
+export default function Contact() {
     return (
         <div className="px-2 py-2">
-            <div>
-                <div className="mx-auto max-w-6xl px-2 py-4">
-                    <NavigationMenu>
-                        <NavigationMenuList className="flex-wrap justify-end w-full">
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <Link href="/">Home</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <Link href="/blogs">Blogs</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <Link href="/apps">Apps</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <Link href="/careers">Careers</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <Link href="/contact" className="text-foreground font-medium">Contact</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
-                        </NavigationMenuList>
-                    </NavigationMenu>
-                </div>
-
-                <div className="border-b border-white/10 mt-2 mb-2" />
-            </div>
+            <Navbar currentPage="contact" />
 
             <div className="mx-auto max-w-6xl px-4 py-8">
                 <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 mb-6">
@@ -91,42 +59,7 @@ export default function Careers() {
                 </div>
 
             </div>
-
-            <footer className="w-full mt-16 py-10 border-t">
-                <div className=" mx-auto max-w-6xl px-4 py-8 flex justify-center gap-6 mb-4 text-sm text-muted-foreground">
-                    <div className="space-y-1">
-                        <div className="flex h-5 items-center space-x-4 text-sm">
-                            <a href="/" className="hover:text-foreground transition">
-                                Home
-                            </a>
-                            <Separator orientation="vertical" />
-                            <a href="/blogs" className="hover:text-foreground transition">
-                                Blogs
-                            </a>
-                            <Separator orientation="vertical" />
-                            <a href="/apps" className="hover:text-foreground transition">
-                                Apps
-                            </a>
-                            <Separator orientation="vertical" />
-                            <a href="/careers" className="hover:text-foreground transition">
-                                Careers
-                            </a>
-                            <Separator orientation="vertical" />
-                            <a href="/contact" className="hover:text-foreground transition">
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="justify-center flex h-5 items-center space-x-4 text-sm mt-8">
-                    <div className="text-center text-xs text-muted-foreground">udhayakumarth.com</div>
-                    <Separator orientation="vertical" />
-                    <div className="text-center text-xs text-muted-foreground">No Rights Reserved.</div>
-                </div>
-
-            </footer>
+            <Footer />
         </div>
     );
 }

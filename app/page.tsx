@@ -77,7 +77,7 @@ export default function Home() {
         <p className="text-muted-foreground text-sm mb-8">Software Engineer</p>
         <div className="border-b border-white/10 mt-2 mb-8" />
         <p className="leading-7 [&:not(:first-child)]:mt-6 mb-12">
-          I'm someone who thinks deeply and questions everything. I like understanding how things work — whether it's tech, history, politics, or society. I focus on the long term, work steadily, and stay curious. I'm not driven by hype; I'm driven by learning, progress, and the confidence that I can build my own path.
+          I'm someone who thinks deeply and questions everything. I like understanding how things work — whether it's science, tech, history, politics, or society. I focus on the long term, work steadily, and stay curious. I'm not driven by hype; I'm driven by learning, progress, and the confidence that I can build my own path.
         </p>
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6">
           My Journey
