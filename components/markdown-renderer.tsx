@@ -103,7 +103,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
   }
 
   return (
-    <div className="prose prose-invert max-w-4xl mx-auto">
+    <div className="prose prose-invert max-w-6xl mx-auto">
       <style>{`
         .prose {
           color: #e5e7eb;
@@ -121,7 +121,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         }
 
         .prose h2 {
-          font-size: 1.875rem;
+          font-size: 2.25rem;
           font-weight: 600;
           margin-top: 1.3em;
           margin-bottom: 0.4em;
@@ -159,7 +159,13 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           max-width: 100%;
           background: #FFDE27;
           color: #000;
-          font-size: 1rem;
+          font-size: 16px;
+          margin-top: 1rem;
+        }
+
+        .prose p {
+          line-height: 2.1;
+          margin-bottom: 1.25em;
         }
 
         /* Make links inside headings black and remove underline */
@@ -303,7 +309,8 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         }
 
         .prose blockquote {
-          border-left: 4px solid #fbbf24;
+          border-left: 2px solid #fbbf24;
+          margin-top: 1rem;
           padding-left: 1rem;
           margin-left: 0;
           margin-bottom: 1.25em;

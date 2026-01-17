@@ -3,8 +3,6 @@ import { MarkdownRenderer } from "@/components/markdown-renderer";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -87,7 +85,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Header */}
         <article>
           <header className="mb-12 pb-8 border-b border-white/10">
-            <h1 className="scroll-m-20 text-2xl font-bold tracking-tight mb-4">
+            <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight mb-4">
               {post.title}
             </h1>
 

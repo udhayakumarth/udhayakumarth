@@ -1,18 +1,6 @@
-import Image from "next/image";
-import Link from "next/link"
-import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
-import { Separator } from "@/components/ui/separator"
 import type { Metadata } from "next";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "whoami - Udhayakumar",
@@ -33,41 +21,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="px-2 py-2">
-      <div>
-        <div className="mx-auto max-w-6xl px-2 py-4">
-          <NavigationMenu>
-            <NavigationMenuList className="flex-wrap justify-end w-full">
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/" className="text-foreground font-medium">Home</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/blogs">Blogs</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/apps">Apps</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/careers">Careers</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link href="/contact">Contact</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
-
-        <div className="border-b border-white/10 mt-2 mb-2" />
-      </div>
+      <Navbar currentPage="blogs" />
 
       <div className="mx-auto max-w-6xl px-4 py-8">
         <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight text-balance mb-8">
@@ -116,41 +70,7 @@ export default function Home() {
 
       </div>
 
-      <footer className="w-full mt-16 py-10 border-t">
-        <div className=" mx-auto max-w-6xl px-4 py-8 flex justify-center gap-6 mb-4 text-sm text-muted-foreground">
-          <div className="space-y-1">
-            <div className="flex h-5 items-center space-x-4 text-sm">
-              <a href="/" className="hover:text-foreground transition">
-                Home
-              </a>
-              <Separator orientation="vertical" />
-              <a href="/blogs" className="hover:text-foreground transition">
-                Blogs
-              </a>
-              <Separator orientation="vertical" />
-              <a href="/apps" className="hover:text-foreground transition">
-                Apps
-              </a>
-              <Separator orientation="vertical" />
-              <a href="/careers" className="hover:text-foreground transition">
-                Careers
-              </a>
-              <Separator orientation="vertical" />
-              <a href="/contact" className="hover:text-foreground transition">
-                Contact
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-        <div className="justify-center flex h-5 items-center space-x-4 text-sm mt-8">
-          <div className="text-center text-xs text-muted-foreground">udhayakumarth.com</div>
-          <Separator orientation="vertical" />
-          <div className="text-center text-xs text-muted-foreground">No Rights Reserved.</div>
-        </div>
-
-      </footer>
+      <Footer />
     </div>
   );
 }
