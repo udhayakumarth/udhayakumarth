@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { FaRegCopyright } from "react-icons/fa";
 
 export function Footer() {
   return (
@@ -29,8 +30,8 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="justify-center flex h-5 items-center space-x-4 text-sm mt-8">
-        <div className="text-center text-xs text-muted-foreground">udhayakumarth.com</div>
+      <div className="justify-center flex h-5 items-center space-x-4 mt-8">
+        <div className="text-center text-xs text-muted-foreground">udhayakumarth.com {new Date().getFullYear()}</div>
         <Separator orientation="vertical" />
         <div className="text-center text-xs text-muted-foreground">No Rights Reserved.</div>
       </div>

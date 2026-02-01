@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import {
+    FaXTwitter
+} from "react-icons/fa6";
+
+import Link from "next/link";
+
 
 export const metadata: Metadata = {
     title: "Contact - Udhayakumar",
@@ -32,6 +38,13 @@ export default function Contact() {
                     Reach me at <a href="mailto:dev.udhayakumar@gmail.com" className="text-muted-foreground hover:text-foreground transition">
                         dev.udhayakumar@gmail.com
                     </a>
+                </div>
+                <div className="flex gap-5 text-xl mt-10">
+
+                    <Link href="https://x.com/udhayakumarth" target="_blank">
+                        <FaXTwitter className="hover:text-primary transition" />
+                    </Link>
+
                 </div>
 
             </div>

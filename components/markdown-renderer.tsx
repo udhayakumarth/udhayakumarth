@@ -111,7 +111,6 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         }
 
         .prose h1 {
-          font-size: 2.25rem;
           font-weight: 600;
           margin-top: 1.5em;
           margin-bottom: 0.5em;
@@ -121,25 +120,21 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         }
 
         .prose h2 {
-          font-size: 2.25rem;
           font-weight: 600;
           margin-top: 1.3em;
           margin-bottom: 0.4em;
           color: #fff;
           scroll-margin-top: 80px;
           text-decoration: none;
-          background-color: #FFDE27;
         }
 
         .prose h3 {
-          font-size: 1.5rem;
           font-weight: 600;
           margin-top: 1.2em;
           margin-bottom: 0.3em;
           color: #fff;
           scroll-margin-top: 80px;
           text-decoration: none;
-          background-color: #FFDE27;
         }
 
         .prose h4, .prose h5, .prose h6 {
@@ -157,8 +152,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         .prose h6 {
           display: inline-block;
           max-width: 100%;
-          background: #FFDE27;
-          color: #000;
+          color: #fff;
           font-size: 16px;
           margin-top: 1rem;
         }
@@ -175,8 +169,9 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         .prose h4 a,
         .prose h5 a,
         .prose h6 a {
-          color: #000 !important;
           text-decoration: none !important;
+          font-size: 1.5em;
+          color: #fbbf24;
         }
 
         /* Make other links #e5e5e5 */

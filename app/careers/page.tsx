@@ -54,19 +54,11 @@ export default function Careers() {
                     Careers
                 </h2>
 
-                <p className="leading-7 [&:not(:first-child)]:mt-3">
-                    Between 2017 and 2019, I worked wherever I could - a milk shop, a tailor shop, fusing T-shirts, helping with a small chocolate ad campaign, ironing clothes. In 2020 and 2021, I spent my days in a telecom call center, and later delivered food to keep things moving.
+                <p className="leading-7 [&:not(:first-child)]:mt-3 mb-8">
+                    From doing whatever it took to survive to building a career in tech, every step shaped me—and the climb isn’t over yet.
                 </p>
 
-                <p className="leading-7 [&:not(:first-child)]:mt-3">
-                    My first steps into tech came in 2022 as a software intern, followed by some UI design freelance work. In 2024, I got into Cyber Security Analyst - IAM, and in 2025, I finally stepped into software development.
-                </p>
-
-                <p className="leading-7 [&:not(:first-child)]:mt-3">
-                    It wasn't a straight path, but every job taught me something. Every year, I moved a little closer to where I wanted to be. And I'm still moving.
-                </p>
-
-                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-16">
+                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-10">
                     Experience
                 </h4>
 
@@ -81,7 +73,7 @@ export default function Careers() {
                             <div className="flex h-5 items-center space-x-4 text-sm">
                                 <div>Jan 2025 - Present</div>
                                 <Separator orientation="vertical" />
-                                <div>11 mos</div>
+                                <div>1.1 yrs</div>
                             </div>
                         </CardDescription>
                     </CardHeader>
@@ -202,6 +194,14 @@ export default function Careers() {
                         </div>
                     </CardFooter>
                 </Card>
+
+                <p className="leading-7 [&:not(:first-child)]:mt-10">
+                    Between 2017 and 2019, I worked wherever I could - a milk shop, a tailor shop, fusing T-shirts, helping with a small chocolate ad campaign, ironing clothes. In 2020 and 2021, I spent my days in a telecom call center, and later delivered food to keep things moving.
+                </p>
+
+                <p className="leading-7 [&:not(:first-child)]:mt-3">
+                    My first steps into tech came in 2022 as a software intern, followed by some UI design freelance work. In 2024, I got into Cyber Security Analyst - IAM, and in 2025, I finally stepped into software development.
+                </p>
 
             </div>
 
