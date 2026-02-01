@@ -1,7 +1,7 @@
 ---
 title: Spring Boot 4.0 Migration Overview
 slug: spring-boot-4-migration
-date: 2025-01-15
+date: 2026-01-15
 author: Udhayakumar
 ---
 

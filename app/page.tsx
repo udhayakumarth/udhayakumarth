@@ -30,42 +30,9 @@ export default function Home() {
         <p className="text-lg font-semibold">Udhayakumar</p>
         <p className="text-muted-foreground text-sm mb-8">Software Engineer</p>
         <div className="border-b border-white/10 mt-2 mb-8" />
-        <p className="leading-7 [&:not(:first-child)]:mt-6 mb-12">
-          I'm someone who thinks deeply and questions everything. I like understanding how things work — whether it's science, tech, history, politics, or society. I focus on the long term, work steadily, and stay curious. I'm not driven by hype; I'm driven by learning, progress, and the confidence that I can build my own path.
-        </p>
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6">
-          My Journey
-        </h3>
-
-        <span className="bg-yellow-300 px-1 text-black font-semibold text-lg">I wasn't a bright student in school.</span>
-
+        
         <p className="leading-7 [&:not(:first-child)]:mt-3">
-          For most of my early years, I didn't know what I wanted from life. I just followed others — my brother, my friends, even film heroes. My parents weren't highly educated.
-        </p>
-
-        <p className="leading-7 [&:not(:first-child)]:mt-3 mb-6">
-          When I think of my childhood, I mostly remember simple things: playing cricket, roaming around on my cycle, spending hours on GTA and Euro Truck, watching Sun Music, and being scared of exams. We lived in a comfortable 2BHK house my mom had managed to secure for us.
-        </p>
-
-        <span className="bg-yellow-300 px-1 text-black font-semibold text-lg">After I turned 12, life changed.</span>
-
-        <p className="leading-7 [&:not(:first-child)]:mt-3">
-          Things became harder, and all the comfort I knew slowly faded away. I was confused and unsure about everything, but my family somehow kept us going. We didn't rise, but we didn't fall apart either.
-        </p>
-
-        <p className="leading-7 [&:not(:first-child)]:mt-3 mb-6">
-          When it came to choosing a path, I picked computer science in both 12th and college — not because I had a clear dream, but because I didn't know what else to choose. I couldn't build interest in the education and the exams.
-        </p>
-
-        <span className="bg-yellow-300 px-1 text-black font-semibold text-lg">Then COVID happened.</span>
-
-        <p className="leading-7 [&:not(:first-child)]:mt-3">
-          I was 19. For the first time, I felt a strong push to do better. I wasn't good at anything, but I had the motivation to improve. Looking back, I think that's when my real life started. Until then, I hadn't done anything meaningful for myself.
-        </p>
-
-
-        <p className="leading-7 [&:not(:first-child)]:mt-3">
-          <span className="bg-gray-900 px-1 text-white font-semibold">Good movies, books, and computers</span> helped me rebuild who I'm now. I've grown a lot since then, but there is still a long way to go. I don't know exactly where my future will lead, but I know one thing for sure — every year from now will be better than the last.
+          Some lives begin quietly, shaped by borrowed footsteps and borrowed dreams, moving forward without knowing the destination. Days pass in small joys and simple fears, wrapped in ordinary comforts that slowly learn how to disappear. Time teaches its lessons early, turning softness into strength and questions into companions. In silence, through stories, screens, and sleepless thoughts, a self is rebuilt piece by piece. The road ahead remains unwritten, but each passing year carries a deeper promise — to rise, to grow, and to become more than yesterday.
         </p>
 
       </div>
