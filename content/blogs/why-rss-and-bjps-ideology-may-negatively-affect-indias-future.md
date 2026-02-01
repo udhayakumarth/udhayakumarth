@@ -39,6 +39,14 @@ with these you will get a idea what they up to. lets move on to their initiative
 
 - `The "Speak Samskrit" movement of Karnataka`
 
+## India is for Indians not just for Hindus.
+
+RSS does not want to give any respect to other religions. They portray Muslims and Christians as enemies of Hindus. In India today, social media is filled with hate speech against them.
+
+RSS’s goal is to make India a Hindu Rashtra. I was born a Hindu, but after learning that caste oppression and women’s oppression were upheld by Hinduism, I simply cannot find a reason to remain Hindu.
+
+So, should I need to leave India? or be a second-class citizen just because I don’t believe in Hinduism?
+
 
 ## Conclusion 
 
