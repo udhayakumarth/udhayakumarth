@@ -36,20 +36,26 @@ export default function BlogsPage() {
                         </p>
                     </div>
                 ) : (
-                    <ul>
+                    <ul className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                         {posts.map((post) => (
-                            <li className="mt-3" key={post.slug}>
-                                <Link key={post.slug} href={`/blogs/${post.slug}`}>
-                                    <div className="flex h-5 items-center space-x-4">
-                                        <div>• </div>
-                                        <div className="text-sm text-muted-foreground">{formatDate(post.date)}</div>
-                                        <div>: </div>
-                                        <div className="bg-yellow-300 px-1 text-black font-semibold text-sm">{post.title}</div>
+                            <li key={post.slug}>
+                                <Link href={`/blogs/${post.slug}`}>
+                                    <div className="border rounded-xl p-4 hover:shadow-md transition bg-background h-full">
+
+                                        <span className="text-xs text-muted-foreground block mb-2">
+                                            {formatDate(post.date)}
+                                        </span>
+
+                                        <h3 className="text-sm font-semibold leading-tight">
+                                            {post.title}
+                                        </h3>
+
                                     </div>
                                 </Link>
                             </li>
                         ))}
                     </ul>
+
                 )}
             </div>
 

@@ -1,0 +1,60 @@
+---
+title: Why RSS and BJP’s ideology may negatively affect India’s future.
+slug: why-rss-and-bjps-ideology-may-negatively-affect-indias-future
+date: 2026-02-01
+author: Udhayakumar
+---
+
+I'm not gonna explain the history of BJP and RSS. But the core part of their idea and what they are doing.  
+## Ideology
+
+> Of the Hindu's, By the Hindu's, ~~For the Hindu's~~ For the Hinduism
+
+Yes, Its not for the `Hindus` but to protect the `Hinduism`. You will find this by yourself if you read this blog fully.
+
+**_What RSS stands for? (from RSS website)_**
+
+
+- Expressed in the simplest terms, the ideal of the Sangh is to carry the nation to the pinnacle of glory, through organizing the entire society and ensuring protection of Hindu Dharma.
+- The aim is to actives the dormant Hindu society, to make it come out of its self-oblivion and realize its past mistakes, to instill in it a firm determination to set them right, and finally to make it bestir itself to reassert its honor and self-respect so that no power on earth dares challenge it in the days to come.
+
+**_What was the problem Hindus faced according to RSS? (from RSS website)_**
+
+- The Hindus have been treated as second-order citizens by successive governments of post-independence Bharat.
+- The endless appeasement of the Muslim population
+- The 800-year-long resistance of the Hindus to Islamic rule had the British
+
+with these you will get a idea what they up to. lets move on to their initiative's. 
+
+## Initiative's
+
+
+**_What was the initiative's they have taken? (from RSS website)_**
+
+- `"Ban Cow-slaughter" campaign of 1952`
+
+- `The mass collection drive for the Vivekananda Rock Memorial at Kanyakumari in 1963`
+
+- `The Ekatmata Rath Yatra of Ganga Jal and Bharatmata in 1983 and the later issue of Ramajanmabhoomi temple, sponsored by the Sangh Pariwar`
+
+- `The "Speak Samskrit" movement of Karnataka`
+
+
+## Conclusion 
+
+All religions care only about the their institutions not the individual human who participate in that. 
+
+For example out of all the things mentioned in the RSS website [vision and mission](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html).  They don't have any mentions of problems faced by individual Hindu. Most Indians or Hindus face `Caste Oppression`, `Gender Oppression`, `Economic Oppression`, `Language & Cultural Oppression` `lack of Education for many Hindus`, `Poor living quality`. 
+
+RSS or any religion based organizations don't talk about individual rights. When there is no equality across Indians. As a county we may not go that far. Also it will be a injustice to leave certain people behind when we grow.
+
+So if you were to pick a ideology that speaks good for people It must speak about
+- `Education`
+- `Self-respect`
+- `Women's rights`
+- `Crony capitalism`
+- `Anything that puts your fellow human in disadvantage.`
+
+Our `Indian constitution` is example of this. It was developed to have individual as there priorities. Our constitution created Intuitions to protect individual rights. RSS says it was created with the inspiration of western countries. Honestly we must learn the good things were ever its from.
+
+> Being a good human is more important than being Tamilian, Indian, or Hindu.   
