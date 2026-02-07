@@ -1,5 +1,5 @@
 ---
-title: Why RSS and BJP’s ideology may negatively affect India’s future.
+title: Why RSS and BJP’s ideology may negatively affect India’s future?
 slug: why-rss-and-bjps-ideology-may-negatively-affect-indias-future
 date: 2026-02-01
 author: Udhayakumar
@@ -51,7 +51,7 @@ So, should I need to leave India? or be a second-class citizen just because I do
 
 All religions care only about the their institutions not the individual human who participate in that. 
 
-For example out of all the things mentioned in the RSS website [vision and mission](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html).  They don't have any mentions of problems faced by individual Hindu. Most Indians `Caste`, `Gender`, `and Economic Oppression` `Lack of Education`, `Poor living quality`. 
+For example out of all the things mentioned in the RSS website [vision and mission](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html).  They don't have any mentions of problems faced by individual Hindu. Most Indians face `Caste`, `Gender`, `and Economic Oppression` `Lack of Education`, `Poor living quality`. 
 
 RSS or any religion based organizations don't talk about individual rights. When there is no equality across Indians. As a county we may not go that far. Also it will be a injustice to leave certain people behind when we grow.
 
