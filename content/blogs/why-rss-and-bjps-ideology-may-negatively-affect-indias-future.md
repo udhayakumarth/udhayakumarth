@@ -10,15 +10,14 @@ I'm not gonna explain the history of BJP and RSS. But the core part of their ide
 
 > Of the Hindu's, By the Hindu's, ~~For the Hindu's~~ For the Hinduism
 
-Yes, Its not for the `Hindus` but to protect the `Hinduism`. You will find this by yourself if you read this blog fully.
 
-**_What RSS stands for? (from RSS website)_**
+**_What RSS stands for? ([from RSS website](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html#:~:text=and%20prosperous%20Bharat.-,The%20Sangh%20Methodology,-Expressed%20in%20the))_**
 
 
 - Expressed in the simplest terms, the ideal of the Sangh is to carry the nation to the pinnacle of glory, through organizing the entire society and ensuring protection of Hindu Dharma.
 - The aim is to actives the dormant Hindu society, to make it come out of its self-oblivion and realize its past mistakes, to instill in it a firm determination to set them right, and finally to make it bestir itself to reassert its honor and self-respect so that no power on earth dares challenge it in the days to come.
 
-**_What was the problem Hindus faced according to RSS? (from RSS website)_**
+**_What was the problem Hindus faced according to RSS? ([from RSS website](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html#:~:text=the%20Hindus%20have%20been%20treated%20as%20second%2Dorder%20citizens%20by%20successive%20governments%20of%20post%2Dindependence%20Bharat.))_**
 
 - The Hindus have been treated as second-order citizens by successive governments of post-independence Bharat.
 - The endless appeasement of the Muslim population
@@ -29,9 +28,9 @@ with these you will get a idea what they up to. lets move on to their initiative
 ## Initiative's
 
 
-**_What was the initiative's they have taken? (from RSS website)_**
+**_What was the initiative's they have taken? ([from RSS website](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html#:~:text=Ban%20Cow%2Dslaughter%22%20campaign%20of%201952))_**
 
-- `"Ban Cow-slaughter" campaign of 1952`
+- `Ban Cow-slaughter" campaign of 1952`
 
 - `The mass collection drive for the Vivekananda Rock Memorial at Kanyakumari in 1963`
 
@@ -43,7 +42,7 @@ with these you will get a idea what they up to. lets move on to their initiative
 
 RSS does not want to give any respect to other religions. They portray Muslims and Christians as enemies of Hindus. In India today, social media is filled with hate speech against them.
 
-RSS’s goal is to make India a Hindu Rashtra. I was born a Hindu, but after learning that caste oppression and women’s oppression were upheld by Hinduism, I simply cannot find a reason to remain Hindu.
+RSS’s goal is to make India a Hindu Rashtra. I was born a Hindu, but after learning that caste oppression and women’s oppression were upheld by Hinduism, I simply cannot find a reason to remain Hindu and to believe in God.
 
 So, should I need to leave India? or be a second-class citizen just because I don’t believe in Hinduism?
 
@@ -52,17 +51,18 @@ So, should I need to leave India? or be a second-class citizen just because I do
 
 All religions care only about the their institutions not the individual human who participate in that. 
 
-For example out of all the things mentioned in the RSS website [vision and mission](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html).  They don't have any mentions of problems faced by individual Hindu. Most Indians or Hindus face `Caste Oppression`, `Gender Oppression`, `Economic Oppression`, `Language & Cultural Oppression` `lack of Education for many Hindus`, `Poor living quality`. 
+For example out of all the things mentioned in the RSS website [vision and mission](https://www.rss.org//Encyc/2015/3/13/Vision-and-Mission.html).  They don't have any mentions of problems faced by individual Hindu. Most Indians `Caste`, `Gender`, `and Economic Oppression` `Lack of Education`, `Poor living quality`. 
 
 RSS or any religion based organizations don't talk about individual rights. When there is no equality across Indians. As a county we may not go that far. Also it will be a injustice to leave certain people behind when we grow.
 
 So if you were to pick a ideology that speaks good for people It must speak about
 - `Education`
 - `Self-respect`
-- `Women's rights`
-- `Crony capitalism`
+- `Gender equality`
+- `Caste discrimination`
+- `Equal opportunities and rights`
 - `Anything that puts your fellow human in disadvantage.`
 
-Our `Indian constitution` is example of this. It was developed to have individual as there priorities. Our constitution created Intuitions to protect individual rights. RSS says it was created with the inspiration of western countries. Honestly we must learn the good things were ever its from.
+Also, if an ideology is not teaching you about `Acquiring knowledge`, `Peace and non-violent`. That will be the first red flag. 
 
-> Being a good human is more important than being Tamilian, Indian, or Hindu.   
+> Being a good human is more important than being Tamilan, Indian, or Hindu.   
