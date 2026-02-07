@@ -5,6 +5,7 @@ date: 2026-02-07
 author: Udhayakumar
 ---
 
+I'm here in Bangalore for last 2+ years. I have traveled in this route several times. Last month I had the chance to travel on this route frequently. I was able to memorize In which place I might get stuck.
 
 I was interested to see what causes these traffic. Also, after crossing the bus stop the road will be free. I used to think the bus drivers are the culprit. That's partially true. But will have a look at the maps to understand it better.
 
