@@ -6,35 +6,33 @@ author: Udhayakumar
 ---
 
 
-I'm here in Bangalore for last 2+ years. I have traveled in this route several times. Last month I had the chance to travel on this route frequently. I was able to memorize In which place I might get stuck.
-
-I was interested to see what causes these traffic. Also, after crossing the bus stop the road will be free. I used to think the bus drivers are the culprit. That's partially true. But will have a look at the maps to understand it better.
+I was interested to see what causes these traffic. Also, after crossing the bus stop the road will be free. I used to think the bus drivers are the culprit. That's partially true. But will have a look at the maps to understand it better.
 
 ## Silk Board Traffic (Towards Hosur)
 
 ![Alt text](https://udhayakumarth.com/images/silkboard-traffic-issues-07022026.png)
 
-In this map we can clearly see the traffic flow. 
+In this map we can clearly see the traffic flow. 
 
 ### Vehicles flow:
 
-Flow 1: Vehicles coming from silk board flyover.
+Flow 1: Vehicles coming from silk board flyover.
 
-Flow 2: Vehicles coming from double decor flyover.
+Flow 2: Vehicles coming from double decor flyover.
 
-Flow 3: Vehicles coming from ORR to Hosur service road.
+Flow 3: Vehicles coming from ORR to Hosur service road.
 
-There are **two roads** here. `1.Highway`, `2.Service road`. There is one bus stop here `1.Silkboard bus stop` towards Hosur. 
+There are **two roads** here. `1.Highway`, `2.Service road`. There is one bus stop here `1.Silkboard bus stop` towards Hosur. 
 
 ### Traffic issue:
 
-1. Flow(2 and 3) from Hosur service road merge Highway. To take e-city flyover
+1. Flow(2 and 3) from Hosur service road merge Highway. To take e-city flyover
 
-2. Flow(1) from silk board flyover buses stops at bus stop in Highway.(Sometimes occupying all 3 lanes)
+2. Flow(1) from silk board flyover buses stops at bus stop in Highway.(Sometimes occupying all 3 lanes)
 
 ## Fix: Re-design of Lanes
 
-I was in full confidence this would be easy to fix. I was wrong. A lot happing here. Especially with buses. They occupy most of lanes at peak hours in a un organized way. Then the traffic merges. All happens in a very close proximity. Thus resulting in heavy traffic.
+I was in full confidence this would be easy to fix. I was wrong. A lot happing here. Especially with buses. They occupy most of lanes at peak hours in a un organized way. Then the traffic merges. All happens in a very close proximity. Thus resulting in heavy traffic.
 
 Surely I'm not a expert in designing roads. Still this was fun to do this. Any discussion on this is welcomed (email: dev.udhayakumar@gmail.com).
 
