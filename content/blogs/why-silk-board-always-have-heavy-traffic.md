@@ -23,7 +23,7 @@ Flow 2: Vehicles coming from double decor flyover.
 
 Flow 3: Vehicles coming from ORR to Hosur service road.
 
-There are **two roads** here. `1.Highway`, `2.Service road`. There is one bus stop here `1.Silkboard bus stop` towards Hosur. 
+There are **two roads** here. `1.Highway`, `2.Service road`. There is one bus stop here `Silkboard bus stop` towards Hosur. 
 
 ### Traffic issue:
 
@@ -35,13 +35,13 @@ There are **two roads** here. `1.Highway`, `2.Service road`. There is one bus st
 
 I was in full confidence this would be easy to fix. I was wrong. A lot happing here. Especially with buses. They occupy most of lanes at peak hours in a un organized way. Then the traffic merges. All happens in a very close proximity. Thus resulting in heavy traffic.
 
-Surely I'm not a expert in designing roads. Still this was fun to do this. Any discussion on this is welcomed (email: dev.udhayakumar@gmail.com).
+Surely I'm not a expert in designing roads. Still this was fun to do. Any discussion on this is welcomed (email: dev.udhayakumar@gmail.com).
 
 ![Alt text](https://udhayakumarth.com/images/silkboard-traffic-re-desigin-07022026.png)
 
 ### Silk Board double decor Flyover
 
-I don't know why it was chosen to have the exit from `Silk Board double decor Flyover` to service road. we have `3 Lanes` in highway. So it makes more sense to have the traffic to join in Highway.
+I don't know why it was chosen to have the exit from `Silk Board double decor Flyover` to `Service road`. We have `3 Lanes` in highway. So it makes more sense to have the traffic to join in Highway.
 
 ### Exit from Highway to Service road 
 
@@ -49,17 +49,17 @@ Currently this is a entry for Highway. This where the problem starts. Since the 
 
 ### Bus stop
 
-There are two types of busses Stop here. `1. City Buses `, `2. Omni Buses`. First thing we have to regulate then. we shouldn't allow then to occupy more than one lane. Some buses stop for more time that should also be regulated. clean lane marking and a person to monitor will fix this.
+There are two types of buses Stop here. `1. City Buses `, `2. Omni Buses`. First thing we have to regulate them. we shouldn't allow then to occupy more than one lane. Some buses stop for more time that should also be regulated. clean lane marking and a person to monitor will fix this.
 
-As I told there are two types of buses stops here. `Omni Buses` need more time to onboard passengers than `city buses`. Also city buses doesn't need to use the highway. They can be directed to use the service road instead of `Silk Board Flyover` from `Madiwala`. This will give some relief to Highway traffic because city buses doesn't use `e-city flyover`. 
+As I told there are two types of buses stops here. `Omni Buses` need more time to onboard passengers than `City buses`. Also city buses doesn't need to use the highway. They can be directed to use the service road instead of `Silk Board Flyover` from `Madiwala`. This will give some relief to Highway traffic because city buses doesn't use `e-city flyover`. 
 
 Since the bus top has some extra area apart from highway. we can utilize that space to have this two bus stops.
 
 ### Entry to E-city Flyover from Service road 
  
-After bus stop in service road. We can have a entry to the `E-city Flyover`. Right now in that place we have `Highway`, `Service road` and `E-city flyover` begins.
+After bus stop in service road. We can have a entry to the `e-city Flyover`. Right now in that place we have `Highway`, `Service road` and `e-city flyover` begins.
 
-To make it simple. we have to merge the `1 lane` of highway to the service road. Also making it one way is necessary. 
+To make it simple. we have to merge the `1 lane` of highway to the service road. Also making it one way is necessary. In this process the service road becomes the Highway. The Highway becomes entry to `e-city` flyover.
 
 
 > May be this is not the best design but I believe this will keep the traffic flowing and not completely get stuck. Hope someone will do a better job than me and also make the change in real.
