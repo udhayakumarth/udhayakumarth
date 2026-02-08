@@ -27,11 +27,20 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
   return {
     title: post.title,
-    description: post.excerpt,
+    description: post.description,
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: post.description,
       type: "article",
+      images: post.image
+        ? [
+            {
+              url: post.image,
+              width: 1200,
+              height: 630,
+            },
+          ]
+        : undefined,
     },
   };
 }

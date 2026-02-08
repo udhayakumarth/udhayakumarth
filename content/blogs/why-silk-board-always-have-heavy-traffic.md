@@ -3,6 +3,7 @@ title: Why Silk Board always have heavy traffic?
 slug: why-silk-board-always-have-heavy-traffic
 date: 2026-02-07
 author: Udhayakumar
+image: https://udhayakumarth.com/og/why-silk-board-always-have-heavy-traffic-meta.png
 ---
 
 I'm here in Bangalore for last 2+ years. I have traveled in this route several times. Last month I had the chance to travel on this route frequently. I was able to memorize In which place I might get stuck.

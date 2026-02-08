@@ -34,13 +34,6 @@ export function Navbar({ currentPage }: NavbarProps) {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Link href="/apps" className={isActive("apps")}>
-                  Apps
-                </Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
                 <Link href="/careers" className={isActive("careers")}>
                   Careers
                 </Link>

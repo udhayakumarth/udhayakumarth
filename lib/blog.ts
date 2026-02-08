@@ -2,19 +2,25 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+
 export interface BlogMetadata {
   title: string;
   slug: string;
   date: string;
   excerpt: string;
   author: string;
+  image?: string;
+  description?: string;
 }
+
 
 export interface BlogPost extends BlogMetadata {
   content: string;
 }
 
 const blogsDirectory = path.join(process.cwd(), "content/blogs");
+
+
 
 export function getAllBlogPosts(): BlogMetadata[] {
   const files = fs.readdirSync(blogsDirectory);
@@ -32,6 +38,8 @@ export function getAllBlogPosts(): BlogMetadata[] {
         date: data.date,
         excerpt: data.excerpt,
         author: data.author,
+        image: data.image,
+        description: data.description || data.excerpt,
       } as BlogMetadata;
     });
 
@@ -53,6 +61,7 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
       date: data.date,
       excerpt: data.excerpt,
       author: data.author,
+      image: data.image,
       content,
     };
   } catch (error) {

@@ -15,10 +15,6 @@ export function Footer() {
               Blogs
             </a>
             <Separator orientation="vertical" />
-            <a href="/apps" className="hover:text-foreground transition">
-              Apps
-            </a>
-            <Separator orientation="vertical" />
             <a href="/careers" className="hover:text-foreground transition">
               Careers
             </a>
@@ -31,7 +27,7 @@ export function Footer() {
       </div>
 
       <div className="justify-center flex h-5 items-center space-x-4 mt-8">
-        <div className="text-center text-xs text-muted-foreground">udhayakumarth.com {new Date().getFullYear()}</div>
+        <div className="text-center text-xs text-muted-foreground">udhayakumarth.com</div>
         <Separator orientation="vertical" />
         <div className="text-center text-xs text-muted-foreground">No Rights Reserved.</div>
       </div>

@@ -3,6 +3,7 @@ title: Why RSS and BJP’s ideology may negatively affect India’s future?
 slug: why-rss-and-bjps-ideology-may-negatively-affect-indias-future
 date: 2026-02-01
 author: Udhayakumar
+image: https://udhayakumarth.com/og/why-rss-and-bjps-ideology-may-negatively-affect-indias-future-meta.png
 ---
 
 I'm not gonna explain the history of BJP and RSS. But the core part of their idea and what they are doing.  
