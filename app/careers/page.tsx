@@ -22,6 +22,10 @@ import {
 } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import {
+    FaLinkedin,
+    FaGithub
+  } from "react-icons/fa6";
 
 import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
@@ -57,6 +61,18 @@ export default function Careers() {
                 <p className="leading-7 [&:not(:first-child)]:mt-3 mb-8">
                     From doing whatever it took to survive to building a career in tech, every step shaped me—and the climb isn’t over yet.
                 </p>
+
+                <div className="flex gap-5 text-xl mt-10">
+
+                    <Link href="https://www.linkedin.com/in/udhayakumarth" target="_blank">
+                        <FaLinkedin className="hover:text-primary transition" />
+                    </Link>
+
+                    <Link href="https://github.com/udhayakumarth" target="_blank">
+                        <FaGithub className="hover:text-primary transition" />
+                    </Link>
+
+                </div>
 
                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-10">
                     Experience
