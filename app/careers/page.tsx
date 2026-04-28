@@ -25,7 +25,7 @@ import { Separator } from "@/components/ui/separator"
 import {
     FaLinkedin,
     FaGithub
-  } from "react-icons/fa6";
+} from "react-icons/fa6";
 
 import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
@@ -59,18 +59,32 @@ export default function Careers() {
                 </h2>
 
                 <p className="leading-7 [&:not(:first-child)]:mt-3 mb-8">
-                    From doing whatever it took to survive to building a career in tech, every step shaped me—and the climb isn’t over yet.
+                    Java Backend Engineer with 2.5 years of experience designing and deploying production-grade microservices at Tech Mahindra. Proven in building scalable REST/SOAP APIs with Spring Boot, orchestrating Kubernetes deployments on Red Hat OpenShift, and leading the migration of 100+ services to Java 21. Passionate about clean architecture, automation, and building systems that scale.
                 </p>
 
                 <div className="flex gap-5 text-xl mt-10">
 
-                    <Link href="https://www.linkedin.com/in/udhayakumarth" target="_blank">
-                        <FaLinkedin className="hover:text-primary transition" />
-                    </Link>
+                    <div className="flex gap-3">
 
-                    <Link href="https://github.com/udhayakumarth" target="_blank">
-                        <FaGithub className="hover:text-primary transition" />
-                    </Link>
+                        <Link
+                            href="https://www.linkedin.com/in/udhayakumarth"
+                            target="_blank"
+                            className="flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-muted transition"
+                        >
+                            <FaLinkedin className="text-lg text-blue-600" />
+                            <span className="text-sm font-medium">LinkedIn</span>
+                        </Link>
+
+                        <Link
+                            href="https://github.com/udhayakumarth"
+                            target="_blank"
+                            className="flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-muted transition"
+                        >
+                            <FaGithub className="text-lg" />
+                            <span className="text-sm font-medium">GitHub</span>
+                        </Link>
+
+                    </div>
 
                 </div>
 
@@ -87,19 +101,20 @@ export default function Careers() {
                         <Separator className="my-4" />
                         <CardDescription>
                             <div className="flex h-5 items-center space-x-4 text-sm">
-                                <div>Jan 2025 - Present</div>
+                                <div>Dec 2023 - Present</div>
                                 <Separator orientation="vertical" />
-                                <div>1.1 yrs</div>
+                                <div>2.5 yrs</div>
                             </div>
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
                         <ul className="ml-6 list-disc [&>li]:mt-2">
-                            <li>Developed and maintained synchronous and asynchronous SOAP and REST microservices with multiple downstream integrations using Spring Boot.</li>
-                            <li>Build a Java-based Kubernetes client that can generate runtime code coverage for any deployment/namespace across multiple clusters.</li>
-                            <li>Built a Java-based workflow runner to orchestrate REST API executions for Automated Testing.</li>
-                            <li>Upgraded and migrated existing microservices from Java 11 to Java 21, ensuring performance and security improvements.</li>
-                            <li>Managed microservice deployments on Red Hat OpenShift (OCP) with blue-green rollout strategies.</li>
+                            <li>Engineered synchronous and asynchronous SOAP/REST microservices using Spring Boot, integrating with multiple downstream systems to ensure reliable service communication.</li>
+                            <li>Built a Java-based Kubernetes client to generate run-time code coverage reports across deployments, namespaces, and multiple clusters, improving real-time testing by tracking coverage.</li>
+                            <li>Designed and built a Java-based Workflow Runner to orchestrate automated REST API test executions, streamlining the end-to-end testing pipeline.</li>
+                            <li>Led the migration of 100+ microservices from Java 11 to Java 21, improving runtime performance and ensuring security compliance.</li>
+                            <li>Managed and automated microservice deployments on Red Hat OpenShift (OCP) using blue-green rollout strategies, minimizing downtime and deployment risk.</li>
+                            <li>Monitored microservice health and performance using Dynatrace and Kibana, building custom dashboards to track latency, error rates, and service dependencies in real time.</li>
                         </ul>
                     </CardContent>
                     <CardFooter>
@@ -121,28 +136,6 @@ export default function Careers() {
                             <Badge variant="outline">PostgreSQL</Badge>
                         </div>
                     </CardFooter>
-                    <Separator className="my-4" />
-                    <CardHeader>
-                        <CardTitle>Cyber Security Analyst - IAM</CardTitle>
-                        <p className="text-muted-foreground text-sm mt-2">
-                            Tech Mahindra
-                        </p>
-                        <Separator className="my-4" />
-                        <CardDescription>
-                            <div className="flex h-5 items-center space-x-4 text-sm">
-                                <div>Dec 2023 - Jan 2025</div>
-                                <Separator orientation="vertical" />
-                                <div>1.1 yrs</div>
-                            </div>
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <ul className="ml-6 list-disc [&>li]:mt-2">
-                            <li>Managed and configured SiteMinder policies, realms, rules, and responses for secure access control.</li>
-                            <li>Handled reverse proxy configurations to secure internal applications via external access points.</li>
-                            <li>Maintained single sign-on (SSO) setups and ensured seamless user authentication experiences</li>
-                        </ul>
-                    </CardContent>
                 </Card>
 
                 <Card className="mt-6 bg-transparent border border-border shadow-none">
@@ -162,9 +155,7 @@ export default function Careers() {
                     </CardHeader>
                     <CardContent>
                         <ul className="ml-6 list-disc [&>li]:mt-2">
-                            <li>Developed a Full-stack Application that allows users to track Income, Expenses, Add Budgets, Savings, Goals and Debts.</li>
-                            <li>Designed database model and user interface using Figma. Implemented REST API endpoints using Spring Boot and MySQL . Enabled visualization through charts and graphs using Chartjs. </li>
-                            <li>Integrated JWT token using Spring Security and established a refresh token strategy, Improved API security. </li>
+                            <li>Designed and developed a full-stack personal finance tracker with a React frontend, Spring Boot REST APIs, and MySQL — implementing JWT-based authentication with refresh token rotation for secure session management. </li>
                         </ul>
                     </CardContent>
                     <CardFooter>
@@ -198,9 +189,7 @@ export default function Careers() {
                     </CardHeader>
                     <CardContent>
                         <ul className="ml-6 list-disc [&>li]:mt-2">
-                            <li>Developed power apps for automating several HR operations eliminating manual work using Microsoft power platform and Sharepoint. </li>
-                            <li>Optimized UI and Implemented automated services for approvals, queries and opting services using Power Automate.</li>
-                            <li>Created a visualization dashboard for employee performance from an existing SQL database using Power BI.</li>
+                            <li>Automated HR operations using Power Apps, Power Automate, and SharePoint for approvals, queries, and service requests — and built a Power BI dashboard on an existing SQL database to provide stakeholders with real-time visibility into key business metrics.</li>
                         </ul>
                     </CardContent>
                     <CardFooter>
@@ -216,7 +205,7 @@ export default function Careers() {
                 </p>
 
                 <p className="leading-7 [&:not(:first-child)]:mt-3">
-                    My first steps into tech came in 2022 as a software intern, followed by some UI design freelance work. In 2024, I got into Cyber Security Analyst - IAM, and in 2025, I finally stepped into software development.
+                    My first steps into tech came in 2022 as a software intern, followed by some UI design freelance work. In 2023, I got into full-time Software Development.
                 </p>
 
             </div>
