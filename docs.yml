@@ -1,0 +1,147 @@
+theme:
+  body: canvas
+  tabs:
+    placement: sidebar
+
+
+layout:
+  searchbar-placement: header
+  hide-feedback: true
+
+
+settings:
+  search-text: "Search..."
+  disable-search: false
+  disable-explorer-proxy: false
+  disable-analytics: true
+  dark-mode-code: true
+  search:
+    prioritize-current-product: true
+    default-filter-by-current-product: true
+  http-snippets: false
+  hide-404-page: true
+  use-javascript-as-typescript: false
+  folder-title-source: frontmatter
+  substitute-env-vars: true
+
+page-actions:
+  default: copy-page
+  options:
+    copy-page: true
+    ask-ai: false
+    cursor: false
+    chatgpt: false
+    claude: false
+
+
+instances:
+  - url: udhayakumarth.docs.buildwithfern.com
+    custom-domain: udhayakumarth.com
+
+favicon: ./images/favicon.png
+
+
+logo: 
+  href: https://udhayakumarth.com
+  dark: images/favicon.png
+  light: images/favicon.png
+  height: 32
+
+
+title: udhayakumarth
+
+tabs:
+  intro:
+    display-name: Home
+    icon: home
+  experience:
+    display-name: Experience
+    icon: briefcase
+  projects:
+    display-name: Projects
+    icon: folder
+  blog:
+    display-name: Blogs
+    icon: book-open
+  contact:
+    display-name: Contact
+    icon: phone
+
+navigation:
+  - tab: intro
+    layout:
+      - page: Welcome
+        path: ./pages/home.mdx
+        
+      
+  - tab: experience
+    layout:
+      - folder: ./pages/experience
+        title: Experience
+        title-source: frontmatter
+        collapsed: open-by-default
+  - tab: projects
+    layout:
+      - folder: ./pages/project
+        title: Projects
+        title-source: frontmatter
+        collapsed: open-by-default
+  - tab: blog
+    layout:
+      - folder: ./pages/blogs
+        title: Blogs
+        title-source: frontmatter
+        slug: blogs
+        collapsed: open-by-default
+  - tab: contact
+    layout:
+      - folder: ./pages/contact
+        title: Contacts
+        title-source: frontmatter
+        slug: contact
+
+
+    
+
+colors:
+  accent-primary:
+    light: "#f99c00"  # Primary brand color for light mode
+    dark: "#fcbb00"   # Primary brand color for dark mode
+  
+  background:
+    light: "#ffffff"
+    dark: "#0d0e11"
+  
+  border:
+    light: "#e5e7eb"
+    dark: "#0d0e11"
+  
+  sidebar-background:
+    light: "#f9fafb"
+    dark: "#0d0e11"
+  
+  header-background:
+    light: "#ffffff"
+    dark: "#0d0e11"
+  
+  card-background:
+    light: "#f3f4f6"
+    dark: "#0d0e11"
+
+
+metadata:
+  og:dynamic: true
+  og:dynamic:background-image: ./images/og-background.png
+  og:dynamic:text-color: "#1a1a1a"
+  og:dynamic:background-color: "#ffffff"
+  og:dynamic:logo-color: dark
+  og:dynamic:show-logo: true
+  og:dynamic:show-section: true
+  og:dynamic:show-description: true
+  og:dynamic:show-url: true
+  og:dynamic:show-gradient: true
+
+footer-links:
+  github: https://github.com/udhayakumarth
+  x: https://x.com/udhayakumarth
+  linkedin: https://www.linkedin.com/in/udhayakumarth/
