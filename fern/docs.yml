@@ -3,13 +3,11 @@ theme:
   tabs:
     placement: header
 
-
 layout:
   searchbar-placement: header
   hide-feedback: true
   mobile-toc: true
   content-width: 55rem
-
 
 settings:
   search-text: "Search..."
@@ -35,21 +33,18 @@ page-actions:
     chatgpt: false
     claude: false
 
-
 instances:
   - url: udhayakumarth.docs.buildwithfern.com
     custom-domain: udhayakumarth.com
 
 favicon: ./images/favicon.png
 
-
-logo: 
+logo:
   href: https://udhayakumarth.com
   dark: images/favicon.png
   light: images/favicon.png
   height: 32
-  right-text: 
-
+  right-text:
 
 title: udhayakumarth
 
@@ -75,8 +70,7 @@ navigation:
     layout:
       - page: Welcome
         path: ./pages/home.mdx
-        
-      
+
   - tab: experience
     layout:
       - folder: ./pages/experience
@@ -103,34 +97,30 @@ navigation:
         title-source: frontmatter
         slug: contact
 
-
-    
-
 colors:
   accent-primary:
-    light: "#f99c00"  # Primary brand color for light mode
-    dark: "#fcbb00"   # Primary brand color for dark mode
-  
+    light: "#475569" # Primary brand color for light mode
+    dark: "#94a3b8" # Primary brand color for dark mode
+
   background:
     light: "#ffffff"
     dark: "#0d0e11"
-  
+
   border:
     light: "#e5e7eb"
     dark: "#0d0e11"
-  
+
   sidebar-background:
     light: "#f9fafb"
     dark: "#0d0e11"
-  
+
   header-background:
     light: "#ffffff"
     dark: "#0d0e11"
-  
+
   card-background:
     light: "#f3f4f6"
     dark: "#0d0e11"
-
 
 metadata:
   og:dynamic: true
