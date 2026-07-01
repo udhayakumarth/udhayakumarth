@@ -99,8 +99,8 @@ navigation:
 
 colors:
   accent-primary:
-    light: "#475569" # Primary brand color for light mode
-    dark: "#94a3b8" # Primary brand color for dark mode
+    light: "#008700" # Primary brand color for light mode
+    dark: "#9eeb47" # Primary brand color for dark mode
 
   background:
     light: "#ffffff"
