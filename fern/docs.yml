@@ -1,12 +1,14 @@
 theme:
   body: canvas
   tabs:
-    placement: sidebar
+    placement: header
 
 
 layout:
   searchbar-placement: header
   hide-feedback: true
+  mobile-toc: true
+  content-width: 55rem
 
 
 settings:
@@ -46,6 +48,7 @@ logo:
   dark: images/favicon.png
   light: images/favicon.png
   height: 32
+  right-text: 
 
 
 title: udhayakumarth
@@ -140,8 +143,3 @@ metadata:
   og:dynamic:show-description: true
   og:dynamic:show-url: true
   og:dynamic:show-gradient: true
-
-footer-links:
-  github: https://github.com/udhayakumarth
-  x: https://x.com/udhayakumarth
-  linkedin: https://www.linkedin.com/in/udhayakumarth/
