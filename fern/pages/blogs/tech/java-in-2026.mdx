@@ -1,0 +1,180 @@
+---
+title: "Java in 2026: Virtual Threads, AOT Cache, Markdown Docs, and More"
+slug: blogs/tech/java-in-2026
+last-updated: July 12, 2026
+hide-page-actions: true
+---
+
+I started my careers in `Java 8`. Since then `Java 11,17,21,25` and now `Java 26`. Even though I have migrated many microservice from Java 11 to Java 21 didn't use any modern features because our focus was to eliminate vulnerabilities. 
+
+These new Java features are really game changing. The new JDK comes with lot of performance improvements and new ways of writing and operating Java apps. Lets see some of the cool things that I found as interesting.
+## Virtual Threads
+
+Before `Java 21`  we had only platform threads. Which is borrowed from OS.  These threads are inefficient and limited. Also resource heavy to create and discard.  
+
+**Project Loom** was created to work on finding a way to improve Java for concurrency. Where `Go` and `Rust` dominates. Project Loom came up with virtual threads and the result is really impressive. 
+
+Take a look at a simple bench mark of Old `Platform Threads` and new `Virtual Threads`.
+
+```
+100k Tasks: Old Platform Threads
+------------------------------------
+Total execution time : 5148 ms
+Slowest task         : Thread-740
+Slowest task time    : 61 ms
+------------------------------------
+```
+
+```
+100k Tasks: New Virtual Threads
+------------------------------------
+Total execution time : 436 ms
+Slowest thread       : Thread-44695
+Slowest thread time  : 82 ms
+------------------------------------
+```
+
+This is huge difference. 
+
+And to use this in your spring boot application all you need to do is add a config in application properties.
+
+``` application.properties
+spring.threads.virtual.enabled=true
+```
+
+Along with [`Structured Concurrency` and `Scoped values`](https://youtu.be/kz_R6-fdSZc?si=l5AWDR2tT6VaVdot). Working with Concurrency in Java has never been this good.
+
+## GraalVM Native Image
+
+Traditionally we build our spring boot service as `your-service-name.jar`  which needs a `JVM` to run this service. Each time we start the service it takes `10s` to `50s` depending upon project size. In cloud env when we have sudden spike in traffic we need to scale immediately. 
+
+**Netflix** has same issue. To their scale of traffic they can't wait for `50s` to scale. What they do is keep few replicas ready all the time. That's 1000s of replicas sitting idle costing millions of dollar.
+
+**GraalVM** Native Image fix's this issues. You can convert your spring boot service into native image. Native images can start in milliseconds and be ready for accepting traffic.
+
+**Advantages**
+- Startup time - 10x faster
+- Memory usage - 50% lower
+
+**Disadvantages**
+- Peak throughput - Slightly lower
+
+Because No `JIT`. We don't get the runtime optimizations. So bad of  scale of Netflix because they need throughput. But still this is good for startup companies. Which can save lot of cost in memory and CPU. Unless you don't have high traffic like Netflix.
+
+## AOT Cache
+
+If you can't lose `JIT` but still you want to improve startup time by 15 to 30% faster AOT Cache can help.
+
+The AOT Cache (Ahead-of-Time Cache) stores pre-processed class metadata, loaded classes, and linking information from a training run, so the JVM can skip repeating that work on subsequent startups.
+This significantly reduces JVM startup time and time-to-peak-performance, especially useful for short-lived processes like CLI tools or serverless functions.
+
+### Steps to use AOT
+
+After building spring boot app. Use below commands to generate `.aot`
+
+```
+java -Djarmode=tools -jar demo-0.0.1-SNAPSHOT.jar extract --destination application
+cd application
+java -XX:AOTCacheOutput=app.aot -Dspring.context.exit=onRefresh -jar demo-0.0.1-SNAPSHOT.jar
+```
+
+This will create `app.aot`
+
+Then run the app with `app.aot` cache
+
+```
+java -XX:AOTCache=app.aot -jar demo-0.0.1-SNAPSHOT.jar
+```
+
+### Result 
+
+Same application **with** and **without** AOT Cache:
+
+`Started DemoApplication in 1.22 seconds (process running for 1.475)`
+
+`Started DemoApplication in 3.102 seconds (process running for 3.4)`
+
+[Check out how Netflix has implemented AOT.](https://youtu.be/4kEh8hxAP4U?si=-Or1-dgZv1RUJZGH)
+
+## Markdown in Javadoc
+
+Markdown in Javadoc lets you write doc comments using /// and standard Markdown syntax (like `, -, ##) instead of HTML tags inside /** */ blocks.
+It produces the same generated documentation but is much easier to read and write directly in the source code.
+
+### Example - Traditional Javadoc
+
+```java
+/**
+ * A simple utility class for printing greetings.
+ * <p>
+ * This class demonstrates the traditional Javadoc style
+ * using HTML tags and {@code @} block tags. It provides:
+ * <ul>
+ *   <li>a method to print a personalized or generic greeting</li>
+ *   <li>a {@code main} method to demonstrate usage</li>
+ * </ul>
+ *
+ * <p>Example usage:
+ * <pre>{@code
+ * HelloWorldOld.sayHello("Traditional Javadoc");
+ * // prints: Hello, Traditional Javadoc!
+ * }</pre>
+ *
+ * @author udhayakumarth
+ * @since 1.0
+ * @see java.lang.System#out
+ */
+public class TraditionalJavadoc {
+
+    public static void sayHello(String name) {
+        if (name == null || name.isBlank()) {
+            System.out.println("Hello, World!");
+        } else {
+            System.out.println("Hello, " + name + "!");
+        }
+    }
+
+    public static void main(String[] args) {
+        sayHello(null);      // Hello, World!
+        sayHello("Traditional Javadoc");  // Hello, Traditional Javadoc!
+    }
+}
+```
+
+### Example - Markdown Javadoc
+
+```java
+/// A simple utility class for printing greetings.
+///
+/// This class demonstrates the new **Markdown-style** Javadoc
+/// introduced in JEP 467. It provides:
+///
+/// - a method to print a personalized or generic greeting
+/// - a `main` method to demonstrate usage
+///
+/// ## Example
+///
+/// ```
+/// HelloWorldNew.sayHello("Markdown");
+/// // prints: Hello, Markdown!
+/// ```
+///
+/// @author udhayakumarth
+/// @since 1.0
+/// @see java.lang.System#out
+public class MarkdownJavadocs {
+
+    public static void sayHello(String name) {
+        if (name == null || name.isBlank()) {
+            System.out.println("Hello, World!");
+        } else {
+            System.out.println("Hello, " + name + "!");
+        }
+    }
+
+    public static void main(String[] args) {
+        sayHello(null);      // Hello, World!
+        sayHello("Markdown");  // Hello, Markdown!
+    }
+}
+```
